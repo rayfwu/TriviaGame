@@ -10,7 +10,7 @@ function countDown() {
     console.log(seconds);
     if (seconds <= 0) {
         clearInterval(number);
-        $("#timer").text("Time's up!");
+        $("#timer").text("Your answer is " + $("input[name='answer']:checked").val());
     }
 }
 
@@ -25,7 +25,7 @@ function MultiChoice(question, choices, answer) {
 }
 
 var aChoice = new MultiChoice("What did Jenny from 'Forrest Gump' die of?", ["AIDS", "Influenza", "Cancer", "A broken heart"], 0);
-aChoice.show();
+//aChoice.show();
 
 // var myVar = setInterval(myTimer, 1000);
 
